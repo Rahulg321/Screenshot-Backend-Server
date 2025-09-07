@@ -48,5 +48,5 @@ jobs:
               --platform managed \
               --region ${{ env.REGION }} \
               --allow-unauthenticated \
-              --set-env-vars "AUTH_SECRET=${{ secrets.AUTH_SECRET }},NODE_ENV=production,PORT=8080" \
+              --set-env-vars "AUTH_SECRET=${{ secrets.AUTH_SECRET }},NODE_ENV=production" \
               --timeout=900s

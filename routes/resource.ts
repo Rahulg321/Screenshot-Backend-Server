@@ -9,4 +9,10 @@ router.get("/", authenticateToken, async (req: Request, res: Response) => {
   res.json({ message: "inside get resource" });
 });
 
+router.get("/", authenticateToken, async (req: Request, res: Response) => {
+  console.log("posting a resource");
+
+  res.json({ message: "inside get resource" });
+});
+
 export default router;
